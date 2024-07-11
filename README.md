@@ -6,10 +6,11 @@
 ---
 
 ## Table of Contents
-1. [Planning Stage](#planning-stage)
-2. [Analyzing Stage](#analyzing-stage)
-3. [Constructing Stage](#constructing-stage)
-4. [Executing Stage](#executing-stage)
+## Table of Contents
+1. [Planning Stage](#1-planning-stage)
+2. [Analyzing Stage](#2-analyzing-stage)
+3. [Constructing Stage](#3-constructing-stage)
+4. [Executing Stage](#4-executing-stage)
 5. [Milestones](#milestones)
 6. [Stakeholders](#stakeholders)
 7. [Key Deliverables](#key-deliverables)
