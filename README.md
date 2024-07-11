@@ -4,8 +4,6 @@
 **Repository Name:** waze-user-churn-prediction
 
 ---
-
-## Table of Contents
 ## Table of Contents
 1. [Planning Stage](#1-planning-stage)
 2. [Analyzing Stage](#2-analyzing-stage)
