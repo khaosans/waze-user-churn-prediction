@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import pydeck as pdk
 import plotly.express as px
+import gdown
 
 st.title("Motor Vehicle Collision in New York City")
 st.markdown(
@@ -10,7 +11,16 @@ st.markdown(
 
 @st.cache_data(persist=True)
 def load_data(n_rows):
-    data = pd.read_csv("Motor_Vehicle_Collisions_Crashes.csv", nrows=n_rows)
+    # Google Drive file ID
+    file_id = '1mM022Y0FGyo2A-SVNHcFN8Y0RHfZvEz6'
+    url = f'https://drive.google.com/uc?id={file_id}'
+    output = 'Motor_Vehicle_Collisions_Crashes.csv'
+
+    # Download the file
+    gdown.download(url, output, quiet=False)
+
+    # Load the data
+    data = pd.read_csv(output, nrows=n_rows)
     data.dropna(subset=['LATITUDE', 'LONGITUDE'], inplace=True)
     lowercase = lambda x: str(x).lower()
     data.rename(lowercase, axis='columns', inplace=True)
